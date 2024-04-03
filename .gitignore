@@ -2,6 +2,7 @@
 *.csv
 .idea
 .venv
+TA.txt
 .pdf
 *.iml
 *.iws
