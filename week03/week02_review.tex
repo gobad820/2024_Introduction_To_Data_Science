@@ -1,0 +1,42 @@
+% Preamble
+\documentclass[../Data_Science.tex]{subfiles}
+
+% Packages
+% Document
+\begin{document}
+\section{Ch02. Causality and Experiments}\label{sec:Ch02. Causality and Experiments}
+\subsection{Observation}\label{subsec:Observation}
+\paragraph{individuals}\label{paragraph:individuals}
+연구 대상 각각을 의미한다. 예를 들어 사형 집행주와 그렇지 않은 주의 범죄율 연구에서는 주(state)가 개체(individuals)가 된다.
+
+\paragraph{treatment}\label{paragraph:treatment}
+treatment는 group, condition, independent variable 등으로 불린다. 예를 들어 사형 집행주와 그렇지 않은 주의 범죄율 연구에서 사형 집행주와 그렇지 않은 주가 된다.
+
+\paragraph{outcome}\label{paragraph:outcome}
+결과를 의미하며 dependent variable이라고도 불린다. 예를 들어 사형 집행주와 그렇지 않은 주의 범죄율 연구에서 범죄율이 된다.
+
+\subsection{Relation}\label{subsec:Relation}
+초콜릿 섭취와 심장병의 관계가 존재하는가? 이러한 것을 \tb{Association}이라고 한다. 즉 어떠한 인과관계가 아닌 근야 관련이 있다는 뜻이다. 그렇다면 강한 연관, 직접적인 인과 가ㅗㄴ계가이 있는것인가? 즉 \tb{Causality(인과성)}이 존재하는가?
+
+\subsection{Association}\label{subsec:Association}
+영국의 런던에서는 콜레라가 나쁜 냄새와 연관이 있다고 생각했다. 즉 콜레라와 나쁜 냄새 사이의 Associationd 있다고 생각했다.
+이 때 John snow는 물펌프가 있는 곳에 많은 콜레라 사망자가 있음을 발견, 물과 콜레라 사이의 Association이 있음을 알았다.
+
+\subsection{Causality}\label{subsec:Causality}
+넘어서서 john snow는 물과 콜레라의 Causality가 있음을 밝히기 위해 오염된 물을 받은 그룹(\tb{treatment group})과 오염되지 않은 물을 받은 그룹(\tb{control group})을 만들었다. 그리고 두 그룹의 콜레라 발병률을 비교했다. 결과적으로 오염된 물을 받은 그룹의 콜레라 발병률이 높았다. 이러한 실험을 통해 물과 콜레라 사이의 Causality를 밝혔다.
+
+\subsection{Confounding}\label{subsec:Confounding}
+치료군과 대조군 간에 체계적 차이가 있을 때 treatment 이외에는 인과관계를 확인한기는 어렵다.
+이러한 차이는 관찰 연구에서 주로 나타난다.
+이러한 현상들이 연구자들을 잘못된 길로 이끌어 냈을 때는 이를 \tb{교란 변수(Confounding factors)}라고 한다.
+
+예를 들어 마가린의 섭취량과 이혼율은 매년 매우 비슷한 수치를 기록한다. 하지만 이것이 Causality를 의미하는 것은 아니다.
+
+\subsection{Randomize}\label{subsec:Randomize}
+무작위로 treament와 control에 개인을 배정하면 treatment를 제외하면 두 그룹은 비슷할 가능성이 높다.
+즉 랜덤하게 사람을 그룹에 넣어야 한다. \tb{Randomized Controlled Experiment}이라고 한다.
+
+여기서 주의해야 할 것이 \tb{Random $neq$ Haphazard}이다. 랜덤하다는 것이 계획없다는 뜻은 아니다.
+\subsection{Takeaway}\label{subsec:Takeaway}
+\tb{Association do not imply causations}
+\end{document}
